@@ -21,7 +21,7 @@ $functions = array(
                 $trigger_text = '';
             }
             // Call the global stat boost function with customized options
-            rpg_ability::ability_function_stat_boost($this_robot, 'attack', 1, $this_item, null, null, $trigger_text);
+            rpg_ability::ability_function_stat_boost($this_robot, 'attack', 1, $this_item, 9, 9, $trigger_text);
         }
 
         // Return true on success

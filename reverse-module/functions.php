@@ -11,7 +11,8 @@ $functions = array(
             if ($this_robot->has_skill('guard-submodule')){ return false; }
             if (!empty($options->extra_text)){ $options->extra_text .= ' <br /> '; }
             $options->extra_text .= 'The '.$this_item->print_name().' inverts stat changes! ';
-            return rpg_ability::ability_function_stat_break($this_robot, $options->stat_type, ($options->boost_amount * -1), $this_item, $options->success_frame, $options->failure_frame, $options->extra_text, true, false);
+            rpg_ability::ability_function_stat_break($this_robot, $options->stat_type, ($options->boost_amount * -1), $this_item, $options->success_frame, $options->failure_frame, $options->extra_text, true, false);
+            $options->extra_text = '';
         } else {
             return true;
         }
@@ -24,7 +25,8 @@ $functions = array(
             if ($this_robot->has_skill('guard-submodule')){ return false; }
             if (!empty($options->extra_text)){ $options->extra_text .= ' <br /> '; }
             $options->extra_text .= 'The '.$this_item->print_name().' inverts stat changes! ';
-            return rpg_ability::ability_function_stat_boost($this_robot, $options->stat_type, ($options->break_amount * -1), $this_item, $options->success_frame, $options->failure_frame, $options->extra_text, true, false);
+            rpg_ability::ability_function_stat_boost($this_robot, $options->stat_type, ($options->break_amount * -1), $this_item, $options->success_frame, $options->failure_frame, $options->extra_text, true, false);
+            $options->extra_text = '';
         } else {
             return true;
         }
