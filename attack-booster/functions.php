@@ -13,9 +13,15 @@ $functions = array(
 
         // Ensure this robot's stat isn't already at max value
         if ($this_robot->counters['attack_mods'] < MMRPG_SETTINGS_STATS_MOD_MAX){
-            $this_battle->events_debug(__FILE__, __LINE__, $this_robot->robot_token.' '.$this_robot->get_item().' boosts attack by one stage');
+            // If this robot has a stat-based skill, display the trigger text separately
+            $trigger_text = $this_robot->print_name().' triggers '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!';
+            if (!empty($this_robot->robot_skill) && preg_match('/^(guard|reverse|xtreme)-submodule$/', $this_robot->robot_skill)){
+                $this_item->target_options_update(array('frame' => 'summon', 'success' => array(9, 0, 0, -10, $trigger_text)));
+                $this_robot->trigger_target($this_robot, $this_item, array('prevent_default_text' => true));
+                $trigger_text = '';
+            }
             // Call the global stat boost function with customized options
-            rpg_ability::ability_function_stat_boost($this_robot, 'attack', 1, false, null, null, $this_robot->print_name().' triggers '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!');
+            rpg_ability::ability_function_stat_boost($this_robot, 'attack', 1, $this_item, null, null, $trigger_text);
         }
 
         // Return true on success
