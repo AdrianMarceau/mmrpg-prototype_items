@@ -5,8 +5,8 @@ $functions = array(
     },
     'item_function_onload' => function($objects){
         extract($objects);
-        $this_item->values['divert_from_stat'] = 'defense';
-        $this_item->values['divert_to_stats'] = array('speed', 'attack');
+        $this_item->values['divert_from_stat'] = 'speed';
+        $this_item->values['divert_to_stats'] = array('attack', 'defense');
         $this_item->values['divert_multiplier'] = (2 / 3);
         return true;
     },
@@ -87,7 +87,6 @@ $functions = array(
                 }
             }
         }
-
 
         // Return true on success
         return true;
