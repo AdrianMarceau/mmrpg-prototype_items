@@ -282,10 +282,20 @@
             "field-booster"
         ]
     },
+    "MMRPG\/Items\/StatDiverters": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/StatDiverters",
+        "group_order": 31,
+        "group_child_tokens": [
+            "attack-diverter",
+            "defense-diverter",
+            "speed-diverter"
+        ]
+    },
     "MMRPG\/Items\/Modules": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Modules",
-        "group_order": 31,
+        "group_order": 32,
         "group_child_tokens": [
             "target-module",
             "charge-module"
@@ -294,7 +304,7 @@
     "MMRPG\/Items\/Modules2": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Modules2",
-        "group_order": 32,
+        "group_order": 33,
         "group_child_tokens": [
             "guard-module",
             "reverse-module",
@@ -304,7 +314,7 @@
     "MMRPG\/Items\/Modules3": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Modules3",
-        "group_order": 33,
+        "group_order": 34,
         "group_child_tokens": [
             "growth-module",
             "fortune-module"
@@ -313,7 +323,7 @@
     "MMRPG\/Items\/Circuits1": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Circuits1",
-        "group_order": 34,
+        "group_order": 35,
         "group_child_tokens": [
             "battery-circuit",
             "sponge-circuit",
@@ -324,7 +334,7 @@
     "MMRPG\/Items\/Circuits2": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Circuits2",
-        "group_order": 35,
+        "group_order": 36,
         "group_child_tokens": [
             "chrono-circuit",
             "cosmo-circuit"
@@ -333,7 +343,7 @@
     "MMRPG\/Items\/EventPrograms": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventPrograms",
-        "group_order": 36,
+        "group_order": 37,
         "group_child_tokens": [
             "light-program",
             "wily-program",
@@ -343,7 +353,7 @@
     "MMRPG\/Items\/EventLinks": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventLinks",
-        "group_order": 37,
+        "group_order": 38,
         "group_child_tokens": [
             "auto-link",
             "reggae-link",
@@ -353,7 +363,7 @@
     "MMRPG\/Items\/EventCodesA": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesA",
-        "group_order": 38,
+        "group_order": 39,
         "group_child_tokens": [
             "item-codes",
             "equip-codes"
@@ -362,7 +372,7 @@
     "MMRPG\/Items\/EventCodesB": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesB",
-        "group_order": 39,
+        "group_order": 40,
         "group_child_tokens": [
             "ability-codes",
             "weapon-codes"
@@ -371,7 +381,7 @@
     "MMRPG\/Items\/EventCodesC": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesC",
-        "group_order": 40,
+        "group_order": 41,
         "group_child_tokens": [
             "master-codes",
             "dress-codes"
@@ -380,7 +390,7 @@
     "MMRPG\/Items\/OmegaSeed": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/OmegaSeed",
-        "group_order": 41,
+        "group_order": 42,
         "group_child_tokens": [
             "omega-seed"
         ]
@@ -388,7 +398,7 @@
     "Hidden": {
         "group_class": "item",
         "group_token": "Hidden",
-        "group_order": 42,
+        "group_order": 43,
         "group_child_tokens": [
             "locking-module",
             "star",
