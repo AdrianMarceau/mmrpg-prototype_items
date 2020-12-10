@@ -36,10 +36,17 @@ $functions = array(
             $this_robot->consume_held_item();
 
             // Call the global stat boost function with customized options (first stat has custom text, others do not)
-            rpg_ability::ability_function_stat_boost($this_robot, $stat_tokens[0], $item_restore_value, false, null, null, $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!');
+            rpg_ability::ability_function_stat_boost($this_robot, $stat_tokens[0], $item_restore_value, $this_item, array(
+                'success_frame' => 0,
+                'failure_frame' => 0,
+                'extra_text' = $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!'
+                ));
             foreach ($stat_tokens AS $stat){
                 if ($stat === $stat_tokens[0]){ continue; }
-                rpg_ability::ability_function_stat_boost($this_robot, $stat, $item_restore_value);
+                rpg_ability::ability_function_stat_boost($this_robot, $stat, $item_restore_value, $this_item, array(
+                    'success_frame' => 0,
+                    'failure_frame' => 0
+                    ));
             }
 
             // Reset the applied breaks variable relative to restore amount

@@ -21,7 +21,11 @@ $functions = array(
                 $trigger_text = '';
             }
             // Call the global stat boost function with customized options
-            rpg_ability::ability_function_stat_boost($this_robot, 'speed', 1, $this_item, 9, 9, $trigger_text);
+            rpg_ability::ability_function_stat_boost($this_robot, 'speed', 1, $this_item, array(
+                'success_frame' => 9,
+                'failure_frame' => 9,
+                'extra_text' => $trigger_text
+                ));
         }
 
         // Return true on success
