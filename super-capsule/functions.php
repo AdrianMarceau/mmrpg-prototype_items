@@ -39,7 +39,7 @@ $functions = array(
             rpg_ability::ability_function_stat_boost($this_robot, $stat_tokens[0], $item_restore_value, $this_item, array(
                 'success_frame' => 0,
                 'failure_frame' => 0,
-                'extra_text' = $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!'
+                'extra_text' => $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!'
                 ));
             foreach ($stat_tokens AS $stat){
                 if ($stat === $stat_tokens[0]){ continue; }
