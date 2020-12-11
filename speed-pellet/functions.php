@@ -22,7 +22,9 @@ $functions = array(
             $this_robot->consume_held_item();
 
             // Call the global stat boost function with customized options
-            rpg_ability::ability_function_stat_boost($this_robot, $item_restore_type, $item_restore_value, false, null, null, $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!');
+            rpg_ability::ability_function_stat_boost($this_robot, $item_restore_type, $item_restore_value, $this_item, array(
+                'extra_text' => $this_robot->print_name().' uses '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!'
+                ));
 
             // Reset the applied breaks variable relative to restore amount
             $this_robot->counters[$item_restore_type.'_breaks_applied'] -= $item_restore_value;
