@@ -10,6 +10,7 @@ $functions = array(
     },
     'rpg-ability_stat-boost_before' => function($objects){
         extract($objects);
+        if ($this_robot !== $recipient_robot){ return; }
         if (!$options->is_fixed_amount){
             $invert_boost = $options->boost_amount < 0 ? true : false;
             $options->boost_amount = ceil(MMRPG_SETTINGS_STATS_MOD_MAX * 2);
@@ -29,6 +30,7 @@ $functions = array(
     },
     'rpg-ability_stat-break_before' => function($objects){
         extract($objects);
+        if ($this_robot !== $recipient_robot){ return; }
         if (!$options->is_fixed_amount){
             $invert_break = $options->break_amount < 0 ? true : false;
             $options->break_amount = ceil(MMRPG_SETTINGS_STATS_MOD_MAX * 2);
