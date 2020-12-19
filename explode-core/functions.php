@@ -6,7 +6,7 @@ $functions = array(
     'rpg-robot_apply-stat-bonuses_after' => function($objects){
         return rpg_item::item_function_elemental_core_startup($objects);
     },
-    'rpg-robot_check-items' => function($objects){
+    'rpg-robot_check-items_end-of-turn' => function($objects){
         return rpg_item::item_function_elemental_core_refresh($objects);
     }
 );

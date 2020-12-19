@@ -6,7 +6,7 @@ $functions = array(
         return rpg_item::item_function_stat_booster($objects);
 
     },
-    'rpg-robot_check-items' => function($objects){
+    'rpg-robot_check-items_end-of-turn' => function($objects){
 
         // Extract objects into the global scope
         extract($objects);

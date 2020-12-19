@@ -42,7 +42,7 @@ $functions = array(
         return true;
 
     },
-    'rpg-robot_check-items' => function($objects){
+    'rpg-robot_check-items_end-of-turn' => function($objects){
 
         // Extract objects into the global scope
         extract($objects);
