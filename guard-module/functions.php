@@ -19,7 +19,7 @@ $functions = array(
         $options->extra_text = 'The '.$this_item->print_name().' prevents stat changes! ';
         $options->extra_text .= '<br /> '.$this_robot->print_name().'\'s '.$options->stat_type.' was not '.($options->boost_amount > 0 ? 'raised' : 'lowered').'!';
         $this_item->target_options_update(array('frame' => 'defend', 'success' => array(9, 0, 0, 10, $options->extra_text)));
-        $this_robot->trigger_target($this_robot, $this_item, array('prevent_default_text' => true));
+        $this_robot->trigger_target($this_robot, $this_item, array('prevent_default_text' => true, 'canvas_show_this_item' => false));
         $options->boost_amount = 0;
         $options->extra_text = '';
         return false;
@@ -35,7 +35,7 @@ $functions = array(
         $options->extra_text = 'The '.$this_item->print_name().' protects against stat changes! ';
         $options->extra_text .= '<br /> '.$this_robot->print_name().'\'s '.$options->stat_type.' was not '.($options->break_amount > 0 ? 'lowered' : 'raised').'!';
         $this_item->target_options_update(array('frame' => 'defend', 'success' => array(9, 0, 0, 10, $options->extra_text)));
-        $this_robot->trigger_target($this_robot, $this_item, array('prevent_default_text' => true));
+        $this_robot->trigger_target($this_robot, $this_item, array('prevent_default_text' => true, 'canvas_show_this_item' => false));
         $options->break_amount = 0;
         $options->extra_text = '';
         return false;
