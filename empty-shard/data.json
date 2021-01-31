@@ -3,7 +3,7 @@
     "item_name": "Empty Shard",
     "item_game": "MMRPGP",
     "item_class": "item",
-    "item_subclass": "collectible",
+    "item_subclass": "collectable",
     "item_image": "empty-shard",
     "item_image_sheets": 1,
     "item_image_size": 40,
