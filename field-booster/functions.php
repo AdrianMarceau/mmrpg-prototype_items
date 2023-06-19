@@ -62,13 +62,14 @@ $functions = array(
                     'item_image' => '_effects/arrow-overlay_boost-2',
                     'item_frame' => 0,
                     'item_frame_animate' => array(0),
-                    'item_frame_offset' => array('x' => -5, 'y' => 20, 'z' => -100),
+                    'item_frame_offset' => array('x' => -5, 'y' => 20, 'z' => -9999),
                     'item_frame_classes' => 'sprite_fullscreen ',
                     'item_frame_styles' => 'opacity: 0.6; filter: alpha(opacity=60); background-color: '.$temp_boost_colour_dark.'; '
                     );
 
                 // Attach this item and overlay to the robot temporarily
                 $this_robot->set_frame('taunt');
+                $this_robot->set_frame_styles('z-index: 9999; ');
                 $this_robot->set_attachment($this_attachment_token, $this_attachment_info);
                 $this_robot->set_attachment($fx_attachment_token, $fx_attachment_info);
 
@@ -87,6 +88,7 @@ $functions = array(
 
                 // Remove this item attachment from this robot
                 $this_robot->reset_frame();
+                $this_robot->reset_frame_styles();
                 $this_robot->unset_attachment($this_attachment_token);
                 $this_robot->unset_attachment($fx_attachment_token);
 
