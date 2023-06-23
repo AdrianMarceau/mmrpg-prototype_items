@@ -78,7 +78,9 @@ $functions = array(
                     $this_robot->print_name().' triggers '.$this_robot->get_pronoun('possessive2').' '.$this_item->print_name().'!<br />'.
                     'The <span class="item_name item_type item_type_'.$temp_boost_type.'">'.ucfirst($temp_boost_type).'</span> field multiplier rose to <span class="item_name item_type item_type_none">'.$new_multiplier_value.'</span>!',
                     array(
+                        'this_item' => $this_item,
                         'canvas_show_this_item_overlay' => true,
+                        'canvas_show_this_item_underlay' => false,
                         'event_flag_camera_action' => true,
                         'event_flag_camera_side' => $this_robot->player->player_side,
                         'event_flag_camera_focus' => $this_robot->robot_position,
