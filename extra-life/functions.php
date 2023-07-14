@@ -19,6 +19,7 @@ $functions = array(
         $target_robot->update_session();
 
         // Target this robot's self
+        $this_battle->queue_sound_effect('use-recovery-item');
         $this_item->target_options_update(array(
             'frame' => 'defeat',
             'success' => array(0, 40, -2, 99,
@@ -38,6 +39,7 @@ $functions = array(
         $target_robot->update_session();
 
         // Target this robot's self
+        $this_battle->queue_sound_effect('use-reviving-item');
         $this_item->target_options_update(array(
             'frame' => 'defend',
             'success' => array(0, 40, -2, 10,
