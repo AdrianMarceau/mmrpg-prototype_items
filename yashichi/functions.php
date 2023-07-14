@@ -6,6 +6,7 @@ $functions = array(
         extract($objects);
 
         // Target this robot's self
+        $this_battle->queue_sound_effect('use-recovery-item');
         $this_item->target_options_update(array(
             'frame' => 'summon',
             'success' => array(0, 40, -2, 99,
@@ -99,6 +100,7 @@ $functions = array(
             $trigger_text_shown = false;
 
             // Define the item object and trigger info
+            $this_battle->queue_sound_effect(array('name' => 'use-recovery-item', 'volume' => 0.3));
             $temp_base_energy = $this_robot->get_base_energy();
             $temp_recovery_amount = round($temp_base_energy * ($temp_item_recovery / 100));
             $this_item->recovery_options_update(array(
@@ -116,6 +118,7 @@ $functions = array(
             if (!empty($temp_recovery_amount)){ $this_robot->trigger_recovery($this_robot, $this_item, $temp_recovery_amount); $trigger_text_shown = true; }
 
             // Define the item object and trigger info
+            $this_battle->queue_sound_effect(array('name' => 'use-recovery-item', 'volume' => 0.3));
             $temp_base_weapons = $this_robot->get_base_weapons();
             $temp_recovery_amount = round($temp_base_weapons * ($temp_item_recovery / 100));
             $this_item->recovery_options_update(array(
