@@ -6,6 +6,7 @@ $functions = array(
         extract($objects);
 
         // Target this robot's self
+        $this_battle->queue_sound_effect('use-recovery-item');
         $this_item->target_options_update(array(
             'frame' => 'summon',
             'success' => array(0, 40, -2, 99,
@@ -53,6 +54,7 @@ $functions = array(
             $this_robot->consume_held_item();
 
             // Define the item object and trigger info
+            $this_battle->queue_sound_effect(array('name' => 'use-recovery-item', 'volume' => 0.3));
             $temp_recovery_amount = round($temp_base_energy * ($temp_item_recovery / 100));
             $this_item->recovery_options_update(array(
                 'kind' => 'energy',
