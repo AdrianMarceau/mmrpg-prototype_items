@@ -43,7 +43,8 @@ $functions = array(
         $temp_item_recovery = $this_item->get_recovery();
 
         // Calculate this robot's current damage percent
-        $temp_damage_required = ceil($temp_item_recovery - 10);
+        //$temp_damage_required = ceil($temp_item_recovery - 10);
+        $temp_damage_required = ceil($temp_base_energy / 3); // when the user is in the red (30%)
         $temp_damage_taken = round((($temp_base_energy - $temp_energy) / $temp_base_energy) * 100);
         $this_battle->events_debug(__FILE__, __LINE__, $this_robot->robot_token.' '.$this_robot->get_item().' triggers when energy lowered by '.$temp_damage_required.'% (currently at '.$temp_damage_taken.'%)');
 
