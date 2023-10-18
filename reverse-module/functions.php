@@ -10,6 +10,14 @@ $functions = array(
             $options->return_early = true;
             $options->boost_amount *= -1;
             if ($this_robot->has_skill('guard-submodule')){ return false; }
+            if ($this_robot->has_skill('checkvalve-submodule')){
+                $this_skill = $this_robot->get_skill_object();
+                if (!empty($options->stat_type)
+                    && ($this_skill->skill_parameters['stat'] === 'all'
+                        || $this_skill->skill_parameters['stat'] === $options->stat_type)){
+                    return false;
+                }
+            }
             if (!empty($options->extra_text)){ $options->extra_text .= ' <br /> '; }
             $options->extra_text .= 'The '.$this_item->print_name().' inverts stat changes! ';
             rpg_ability::ability_function_stat_break($this_robot, $options->stat_type, ($options->boost_amount * -1), $this_item, array(
