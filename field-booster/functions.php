@@ -42,7 +42,7 @@ $functions = array(
 
                     // Collect the elemental type arrow index
                     $this_arrow_index = rpg_prototype::type_arrow_image('boost', !empty($temp_boost_type) ? $temp_boost_type : 'none');
-                    $this_types_index = rpg_type::get_index();
+                    $this_types_index = rpg_type::get_index(true, false, true);
 
                     // Collect the type colours so we can use them w/ effects
                     $temp_boost_colour_dark = 'rgb('.implode(', ', $this_types_index[$temp_boost_type]['type_colour_dark']).')';
