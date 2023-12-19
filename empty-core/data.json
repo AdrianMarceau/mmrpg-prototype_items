@@ -9,9 +9,10 @@
     "item_image_size": 40,
     "item_image_editor": "adrianmarceau",
     "item_image_editor2": "",
+    "item_image_editor3": "",
     "item_type": "empty",
     "item_type2": "",
-    "item_description": "A mysterious elemental core that radiates with the Empty type energy of a defeated robot master.",
+    "item_description": "A mysterious elemental core that resonates with the frequency of a corrupted robot master.  Do not engage with this item, as it will only bring despair to those nearby.",
     "item_description2": "",
     "item_description_use": "",
     "item_description_hold": "",
@@ -30,7 +31,7 @@
     "item_shop_level": 0,
     "item_target": "auto",
     "item_flag_hidden": 1,
-    "item_flag_complete": 0,
+    "item_flag_complete": 1,
     "item_flag_published": 1,
-    "item_flag_unlockable": 0
+    "item_flag_unlockable": 1
 }
