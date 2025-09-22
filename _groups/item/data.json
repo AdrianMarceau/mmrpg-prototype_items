@@ -401,10 +401,20 @@
             "cossack-program"
         ]
     },
+    "MMRPG\/Items\/EventHearts": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/EventHearts",
+        "group_order": 43,
+        "group_child_tokens": [
+            "light-heart",
+            "wily-heart",
+            "cossack-heart"
+        ]
+    },
     "MMRPG\/Items\/EventLinks": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventLinks",
-        "group_order": 43,
+        "group_order": 44,
         "group_child_tokens": [
             "auto-link",
             "reggae-link",
@@ -414,7 +424,7 @@
     "MMRPG\/Items\/EventCodesA": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesA",
-        "group_order": 44,
+        "group_order": 45,
         "group_child_tokens": [
             "item-codes",
             "equip-codes"
@@ -423,7 +433,7 @@
     "MMRPG\/Items\/EventCodesB": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesB",
-        "group_order": 45,
+        "group_order": 46,
         "group_child_tokens": [
             "ability-codes",
             "weapon-codes"
@@ -432,7 +442,7 @@
     "MMRPG\/Items\/EventCodesC": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventCodesC",
-        "group_order": 46,
+        "group_order": 47,
         "group_child_tokens": [
             "master-codes",
             "dress-codes"
@@ -441,7 +451,7 @@
     "MMRPG\/Items\/OmegaSeed": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/OmegaSeed",
-        "group_order": 47,
+        "group_order": 48,
         "group_child_tokens": [
             "omega-seed"
         ]
@@ -449,7 +459,7 @@
     "MMRPG\/Items\/Stars": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Stars",
-        "group_order": 48,
+        "group_order": 49,
         "group_child_tokens": [
             "field-star",
             "fusion-star"
@@ -458,7 +468,7 @@
     "MMRPG\/Items\/Empty": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Empty",
-        "group_order": 49,
+        "group_order": 50,
         "group_child_tokens": [
             "empty-shard",
             "empty-core"
@@ -467,8 +477,9 @@
     "Hidden": {
         "group_class": "item",
         "group_token": "Hidden",
-        "group_order": 50,
+        "group_order": 51,
         "group_child_tokens": [
+            "lalinde-heart",
             "locking-module",
             "star",
             "energy-shard",
