@@ -3,15 +3,16 @@
     "item_name": "Crystal Star",
     "item_game": "MMRPGP",
     "item_class": "item",
-    "item_subclass": "treasure",
+    "item_subclass": "collectable",
     "item_image": "crystal-star",
     "item_image_sheets": 1,
     "item_image_size": 40,
     "item_image_editor": "adrianmarceau",
     "item_image_editor2": "",
+    "item_image_editor3": "",
     "item_type": "crystal",
     "item_type2": "",
-    "item_description": "A mysterious elemental star that radiates with the Crystal type energy of a distant planet.  A certain character is said to be researching these items and would likely trade a respectable amount of Zenny to study one up close.",
+    "item_description": "A mysterious elemental star that radiates with the Crystal-type energy of a distant planet.  Collecting one of these permanently boosts the stats of the user's Neutral, Copy, and Crystal-type robots.  A certain character researching the Starforce phenomena would likely trade a respectable amount of Zenny to study one up close.",
     "item_description2": "",
     "item_description_use": "",
     "item_description_hold": "",
@@ -30,7 +31,7 @@
     "item_shop_level": 0,
     "item_target": "auto",
     "item_flag_hidden": 1,
-    "item_flag_complete": 0,
+    "item_flag_complete": 1,
     "item_flag_published": 1,
-    "item_flag_unlockable": 0
+    "item_flag_unlockable": 1
 }
