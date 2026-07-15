@@ -14,6 +14,7 @@ $functions = array(
 
         // If this robot has not yet received the max-stat boost that comes from holding this item, give it now
         if (empty($this_robot->flags['empty-core-gambit'])){
+            //error_log('applying empty core gambit');
             $this_robot->flags['empty-core-gambit'] = true;
             if (empty($this_robot->counters['attack_mods'])
                 || $this_robot->counters['attack_mods'] < MMRPG_SETTINGS_STATS_MOD_MAX){
