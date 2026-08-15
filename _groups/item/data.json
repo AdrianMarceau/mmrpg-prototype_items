@@ -77,9 +77,9 @@
         "group_token": "MMRPG\/Items\/Special",
         "group_order": 8,
         "group_child_tokens": [
-            "mecha-whistle",
             "extra-life",
-            "yashichi"
+            "yashichi",
+            "mecha-whistle"
         ]
     },
     "MMRPG\/Items\/Upgrades": {
@@ -398,7 +398,8 @@
         "group_child_tokens": [
             "light-program",
             "wily-program",
-            "cossack-program"
+            "cossack-program",
+            "lalinde-program"
         ]
     },
     "MMRPG\/Items\/EventHearts": {
@@ -408,7 +409,8 @@
         "group_child_tokens": [
             "light-heart",
             "wily-heart",
-            "cossack-heart"
+            "cossack-heart",
+            "lalinde-heart"
         ]
     },
     "MMRPG\/Items\/EventLinks": {
@@ -471,7 +473,8 @@
         "group_order": 50,
         "group_child_tokens": [
             "empty-shard",
-            "empty-core"
+            "empty-core",
+            "empty-heart"
         ]
     },
     "Hidden": {
@@ -479,7 +482,7 @@
         "group_token": "Hidden",
         "group_order": 51,
         "group_child_tokens": [
-            "lalinde-heart",
+            "proxy-heart",
             "locking-module",
             "star",
             "energy-shard",
