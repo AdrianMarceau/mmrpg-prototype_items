@@ -1,6 +1,6 @@
 {
     "item_token": "magnet-module",
-    "item_name": "Magnet Module",
+    "item_name": "Magnet Module [WIP]",
     "item_game": "MMRPG",
     "item_class": "item",
     "item_subclass": "holdable",
@@ -25,7 +25,7 @@
     "item_recovery_percent": 0,
     "item_recovery2": 0,
     "item_recovery2_percent": 0,
-    "item_price": 10000,
+    "item_price": 4500,
     "item_value": 0,
     "item_shop_tab": "auto\/parts",
     "item_shop_level": 100,
@@ -33,5 +33,5 @@
     "item_flag_hidden": 0,
     "item_flag_complete": 1,
     "item_flag_published": 1,
-    "item_flag_unlockable": 0
+    "item_flag_unlockable": 1
 }
