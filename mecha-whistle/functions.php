@@ -200,6 +200,7 @@ $functions = array(
                 foreach ($this_mecha_info['robot_abilities'] AS $key => $ability_token){
                     if ($key === 0){ $mecha_battle_rewards_array['robot_abilities'][$ability_token] = array('ability_token' => $ability_token); }
                     $mecha_battle_settings_array['robot_abilities'][$ability_token] = array('ability_token' => $ability_token);
+                    mmrpg_game_unlock_ability($this_player->player_token, $this_mecha_info, array('ability_token' => $ability_token), false);
                 }
 
                 // Add the generated session arrays to their parents for persistent keeping
