@@ -1,14 +1,73 @@
 <?
 $functions = array(
     'item_function' => function($objects){
+        return true;
+    },
+    'rpg-robot_check-items_battle-start' => function($objects){
 
         // Extract all objects into the current scope
         extract($objects);
 
-        // Generate an event to show nothing happened
-        $event_header = $this_robot->robot_name.'&#39;s '.$this_item->item_name;
-        $event_body = 'Nothing happened&hellip;';
-        $this_battle->events_create($this_robot, $target_robot, $event_header, $event_body, array('this_item' => $this_item));
+        // Display a message showing this robot's item is in effect
+        $this_robot->set_frame('taunt');
+        $this_battle->queue_sound_effect('ambush-sound');
+        $this_battle->events_create($this_robot, false, $this_robot->robot_name.'\'s '.$this_item->item_name,
+            $this_robot->print_name().'\'s '.$this_item->print_name().' item kicked in!<br />'.
+            'Damage from '.$this_robot->get_pronoun('possessive2').' super effective abilities will do even more damage!',
+            array(
+                'this_item' => $this_item,
+                'canvas_show_this_item_overlay' => false,
+                'canvas_show_this_item_underlay' => true,
+                'event_flag_camera_action' => true,
+                'event_flag_camera_side' => $this_robot->player->player_side,
+                'event_flag_camera_focus' => $this_robot->robot_position,
+                'event_flag_camera_depth' => $this_robot->robot_key
+                )
+            );
+        $this_robot->reset_frame();
+
+        // Return true on success
+        return true;
+
+    },
+    'rpg-ability_trigger-damage_before' => function($objects){
+
+        // Extract objects into the global scope
+        extract($objects);
+
+        // If this robot is not the aggressor, the item doesn't activate
+        if ($options->damage_initiator !== $this_robot){ return false; }
+        if (empty($options->damage_target)){ return false; }
+        $target_robot = $options->damage_target;
+
+        // Make sure the target has a weakness to this robot's move, else return early
+        $num_weaknesses = 0;
+        if ($target_robot->has_weakness($this_ability->ability_type)){ $num_weaknesses++; }
+        if ($target_robot->has_weakness($this_ability->ability_type2)){ $num_weaknesses++; }
+        if (empty($num_weaknesses)){
+            return false;
+        }
+
+        // Display a message showing this robot's item is in effect
+        $this_robot->set_frame('taunt');
+        $this_battle->queue_sound_effect('ambush-sound');
+        $this_battle->events_create($this_robot, false, $this_robot->robot_name.'\'s '.$this_item->item_name,
+            $this_robot->print_name().'\'s '.$this_item->print_name().' item kicked in!<br />'.
+            'Damage from '.$this_robot->get_pronoun('possessive2').' super effective ability will do even more damage!',
+            array(
+                'this_item' => $this_item,
+                'canvas_show_this_item_overlay' => false,
+                'canvas_show_this_item_underlay' => true,
+                'event_flag_camera_action' => true,
+                'event_flag_camera_side' => $this_robot->player->player_side,
+                'event_flag_camera_focus' => $this_robot->robot_position,
+                'event_flag_camera_depth' => $this_robot->robot_key
+                )
+            );
+        $this_robot->reset_frame();
+
+        // Otherwise, we can straight-up double the damage amount because that's the effect
+        $options->damage_amount *= 1 + $num_weaknesses;
 
         // Return true on success
         return true;
