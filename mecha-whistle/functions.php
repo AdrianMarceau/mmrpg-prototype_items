@@ -156,7 +156,7 @@ $functions = array(
 
             // 4. SAVE TO WORLD BATTLE SESSION
             // If this is a WORLD battle, make sure we also unlock this mecha for the player fully so it's persistent
-            if ($this_battle->flags['world_battle']
+            if (!empty($this_battle->flags['world_battle'])
                 && $this_player->player_side === 'left'
                 && !empty($this_mecha_info['robot_base_id'])){
 
