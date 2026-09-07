@@ -28,7 +28,7 @@
     "item_price": 3600,
     "item_value": 0,
     "item_shop_tab": "auto\/items",
-    "item_shop_level": 10,
+    "item_shop_level": 8,
     "item_target": "select_this_disabled",
     "item_flag_hidden": 0,
     "item_flag_complete": 1,
