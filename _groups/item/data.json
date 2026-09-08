@@ -212,10 +212,47 @@
             "cosmo-circuit"
         ]
     },
+    "MMRPG\/Items\/EventLinks": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/EventLinks",
+        "group_order": 22,
+        "group_child_tokens": [
+            "auto-link",
+            "reggae-link",
+            "kalinka-link"
+        ]
+    },
+    "MMRPG\/Items\/EventCodesA": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/EventCodesA",
+        "group_order": 23,
+        "group_child_tokens": [
+            "item-codes",
+            "equip-codes"
+        ]
+    },
+    "MMRPG\/Items\/EventCodesB": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/EventCodesB",
+        "group_order": 24,
+        "group_child_tokens": [
+            "ability-codes",
+            "weapon-codes"
+        ]
+    },
+    "MMRPG\/Items\/EventCodesC": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/EventCodesC",
+        "group_order": 25,
+        "group_child_tokens": [
+            "master-codes",
+            "dress-codes"
+        ]
+    },
     "MMRPG\/Items\/EventPrograms": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventPrograms",
-        "group_order": 22,
+        "group_order": 26,
         "group_child_tokens": [
             "lalinde-program",
             "light-program",
@@ -226,7 +263,7 @@
     "MMRPG\/Items\/EventHearts": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/EventHearts",
-        "group_order": 23,
+        "group_order": 27,
         "group_child_tokens": [
             "lalinde-heart",
             "light-heart",
@@ -237,7 +274,7 @@
     "MMRPG\/Items\/PostGame": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/PostGame",
-        "group_order": 24,
+        "group_order": 28,
         "group_child_tokens": [
             "random-bypass",
             "player-tracker",
@@ -248,169 +285,187 @@
     "MMRPG\/Items\/Cutter": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Cutter",
-        "group_order": 25,
+        "group_order": 29,
         "group_child_tokens": [
             "cutter-shard",
-            "cutter-core"
+            "cutter-core",
+            "cutter-star"
         ]
     },
     "MMRPG\/Items\/Impact": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Impact",
-        "group_order": 26,
+        "group_order": 30,
         "group_child_tokens": [
             "impact-shard",
-            "impact-core"
+            "impact-core",
+            "impact-star"
         ]
     },
     "MMRPG\/Items\/Freeze": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Freeze",
-        "group_order": 27,
+        "group_order": 31,
         "group_child_tokens": [
             "freeze-shard",
-            "freeze-core"
+            "freeze-core",
+            "freeze-star"
         ]
     },
     "MMRPG\/Items\/Explode": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Explode",
-        "group_order": 28,
+        "group_order": 32,
         "group_child_tokens": [
             "explode-shard",
-            "explode-core"
+            "explode-core",
+            "explode-star"
         ]
     },
     "MMRPG\/Items\/Flame": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Flame",
-        "group_order": 29,
+        "group_order": 33,
         "group_child_tokens": [
             "flame-shard",
-            "flame-core"
+            "flame-core",
+            "flame-star"
         ]
     },
     "MMRPG\/Items\/Electric": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Electric",
-        "group_order": 30,
+        "group_order": 34,
         "group_child_tokens": [
             "electric-shard",
-            "electric-core"
+            "electric-core",
+            "electric-star"
         ]
     },
     "MMRPG\/Items\/Time": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Time",
-        "group_order": 31,
+        "group_order": 35,
         "group_child_tokens": [
             "time-shard",
-            "time-core"
+            "time-core",
+            "time-star"
         ]
     },
     "MMRPG\/Items\/Earth": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Earth",
-        "group_order": 32,
+        "group_order": 36,
         "group_child_tokens": [
             "earth-shard",
-            "earth-core"
+            "earth-core",
+            "earth-star"
         ]
     },
     "MMRPG\/Items\/Wind": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Wind",
-        "group_order": 33,
+        "group_order": 37,
         "group_child_tokens": [
             "wind-shard",
-            "wind-core"
+            "wind-core",
+            "wind-star"
         ]
     },
     "MMRPG\/Items\/Water": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Water",
-        "group_order": 34,
+        "group_order": 38,
         "group_child_tokens": [
             "water-shard",
-            "water-core"
+            "water-core",
+            "water-star"
         ]
     },
     "MMRPG\/Items\/Swift": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Swift",
-        "group_order": 35,
+        "group_order": 39,
         "group_child_tokens": [
             "swift-shard",
-            "swift-core"
+            "swift-core",
+            "swift-star"
         ]
     },
     "MMRPG\/Items\/Nature": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Nature",
-        "group_order": 36,
+        "group_order": 40,
         "group_child_tokens": [
             "nature-shard",
-            "nature-core"
+            "nature-core",
+            "nature-star"
         ]
     },
     "MMRPG\/Items\/Missile": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Missile",
-        "group_order": 37,
+        "group_order": 41,
         "group_child_tokens": [
             "missile-shard",
-            "missile-core"
+            "missile-core",
+            "missile-star"
         ]
     },
     "MMRPG\/Items\/Crystal": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Crystal",
-        "group_order": 38,
+        "group_order": 42,
         "group_child_tokens": [
             "crystal-shard",
-            "crystal-core"
+            "crystal-core",
+            "crystal-star"
         ]
     },
     "MMRPG\/Items\/Shadow": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Shadow",
-        "group_order": 39,
+        "group_order": 43,
         "group_child_tokens": [
             "shadow-shard",
-            "shadow-core"
+            "shadow-core",
+            "shadow-star"
         ]
     },
     "MMRPG\/Items\/Space": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Space",
-        "group_order": 40,
+        "group_order": 44,
         "group_child_tokens": [
             "space-shard",
-            "space-core"
+            "space-core",
+            "space-star"
         ]
     },
     "MMRPG\/Items\/Shield": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Shield",
-        "group_order": 41,
+        "group_order": 45,
         "group_child_tokens": [
             "shield-shard",
-            "shield-core"
+            "shield-core",
+            "shield-star"
         ]
     },
     "MMRPG\/Items\/Laser": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Laser",
-        "group_order": 42,
+        "group_order": 46,
         "group_child_tokens": [
             "laser-shard",
-            "laser-core"
+            "laser-core",
+            "laser-star"
         ]
     },
     "MMRPG\/Items\/Copy": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Copy",
-        "group_order": 43,
+        "group_order": 47,
         "group_child_tokens": [
             "copy-shard",
             "copy-core"
@@ -419,47 +474,10 @@
     "MMRPG\/Items\/Neutral": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Neutral",
-        "group_order": 44,
+        "group_order": 48,
         "group_child_tokens": [
             "none-shard",
             "none-core"
-        ]
-    },
-    "MMRPG\/Items\/EventLinks": {
-        "group_class": "item",
-        "group_token": "MMRPG\/Items\/EventLinks",
-        "group_order": 45,
-        "group_child_tokens": [
-            "auto-link",
-            "reggae-link",
-            "kalinka-link"
-        ]
-    },
-    "MMRPG\/Items\/EventCodesA": {
-        "group_class": "item",
-        "group_token": "MMRPG\/Items\/EventCodesA",
-        "group_order": 46,
-        "group_child_tokens": [
-            "item-codes",
-            "equip-codes"
-        ]
-    },
-    "MMRPG\/Items\/EventCodesB": {
-        "group_class": "item",
-        "group_token": "MMRPG\/Items\/EventCodesB",
-        "group_order": 47,
-        "group_child_tokens": [
-            "ability-codes",
-            "weapon-codes"
-        ]
-    },
-    "MMRPG\/Items\/EventCodesC": {
-        "group_class": "item",
-        "group_token": "MMRPG\/Items\/EventCodesC",
-        "group_order": 48,
-        "group_child_tokens": [
-            "master-codes",
-            "dress-codes"
         ]
     },
     "MMRPG\/Items\/OmegaSeed": {
@@ -470,23 +488,23 @@
             "omega-seed"
         ]
     },
-    "MMRPG\/Items\/Stars": {
-        "group_class": "item",
-        "group_token": "MMRPG\/Items\/Stars",
-        "group_order": 50,
-        "group_child_tokens": [
-            "field-star",
-            "fusion-star"
-        ]
-    },
     "MMRPG\/Items\/Empty": {
         "group_class": "item",
         "group_token": "MMRPG\/Items\/Empty",
-        "group_order": 51,
+        "group_order": 50,
         "group_child_tokens": [
             "empty-shard",
             "empty-core",
             "empty-heart"
+        ]
+    },
+    "MMRPG\/Items\/Stars": {
+        "group_class": "item",
+        "group_token": "MMRPG\/Items\/Stars",
+        "group_order": 51,
+        "group_child_tokens": [
+            "field-star",
+            "fusion-star"
         ]
     },
     "Hidden": {
@@ -507,29 +525,11 @@
             "speed-core",
             "attack-star",
             "copy-star",
-            "crystal-star",
-            "cutter-star",
             "defense-star",
-            "earth-star",
-            "electric-star",
             "empty-star",
             "energy-star",
-            "explode-star",
-            "flame-star",
-            "freeze-star",
-            "impact-star",
-            "laser-star",
-            "missile-star",
-            "nature-star",
             "none-star",
-            "shadow-star",
-            "shield-star",
-            "space-star",
-            "speed-star",
-            "swift-star",
-            "time-star",
-            "water-star",
-            "wind-star"
+            "speed-star"
         ]
     }
 }
