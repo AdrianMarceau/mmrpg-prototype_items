@@ -118,7 +118,7 @@ $functions = array(
             $this_mecha_info['counters']['speed_mods'] = $target_robot->counters['speed_mods'];
             $this_mecha_info['values']['robot_rewards'] = !empty($target_robot->values['robot_rewards']) ? $target_robot->values['robot_rewards'] : array();
             $this_mecha_info['values']['robot_rewards']['robot_attack'] = !empty($this_mecha_info['values']['robot_rewards']['robot_attack']) ? $this_mecha_info['values']['robot_rewards']['robot_attack'] : 0;
-            $this_mecha_info['values']['robot_rewards']['robot_defense'] = !empty($this_mecha_info['values']['robot_rewards']['robot_defense']) ? $this_mecha_info['values']['robot_defense']['robot_attack'] : 0;
+            $this_mecha_info['values']['robot_rewards']['robot_defense'] = !empty($this_mecha_info['values']['robot_rewards']['robot_defense']) ? $this_mecha_info['values']['robot_defense']['robot_defense'] : 0;
             $this_mecha_info['values']['robot_rewards']['robot_speed'] = !empty($this_mecha_info['values']['robot_rewards']['robot_speed']) ? $this_mecha_info['values']['robot_rewards']['robot_speed'] : 0;
 
             // Create the new mecha object and apply flags
