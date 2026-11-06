@@ -216,6 +216,12 @@ $functions = array(
                     if (!isset($GAME_SESSION['values']['battle_items'][$this_mecha_item_equipped])){ $GAME_SESSION['values']['battle_items'][$this_mecha_item_equipped] = 0; }
                     $GAME_SESSION['values']['battle_items'][$this_mecha_item_equipped] += 1;
                 }
+                $mecha_encounter_data = array('robot_token' => $this_mecha_token, 'robot_encountered' => 0, 'robot_defeated' => 0, 'robot_unlocked' => 0, 'robot_summoned' => 0, 'robot_scanned' => 0);
+                if (!isset($GAME_SESSION['values']['robot_database'][$this_mecha_token])){ $GAME_SESSION['values']['robot_database'][$this_mecha_token] = $mecha_encounter_data; }
+                else { $GAME_SESSION['values']['robot_database'][$this_mecha_token] = $mecha_encounter_data + $GAME_SESSION['values']['robot_database'][$this_mecha_token]; }
+                $GAME_SESSION['values']['robot_database'][$this_mecha_token]['robot_encountered'] += 1;
+                $GAME_SESSION['values']['robot_database'][$this_mecha_token]['robot_unlocked'] += 1;
+                $GAME_SESSION['values']['robot_database'][$this_mecha_token]['robot_scanned'] += 1;
             }
 
             // Finally, check for disabled robots now that the transfer sequence is fully complete visually
